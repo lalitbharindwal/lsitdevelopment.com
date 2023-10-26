@@ -32,13 +32,28 @@
 	<meta property="og:url" content="index.html" />
 	<meta property="og:site_name" content="On Mission To Build Future Unicorns!" />
 	<meta property="article:modified_time" content="2023-09-25T07:54:48+00:00" />
-	<meta property="og:image" content="wp-content/uploads/2022/11/logo.png" />
+	<meta property="og:image" content="wp-content/uploads/2022/11/icon.jpg" />
 	<meta property="og:image:width" content="1563" />
 	<meta property="og:image:height" content="1563" />
 	<meta property="og:image:type" content="image/png" />
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:label1" content="Est. reading time" />
 	<meta name="twitter:data1" content="14 minutes" />
+	<script>
+// This variable will save the event for later use.
+let deferredPrompt;
+window.addEventListener('beforeinstallprompt', (e) => {
+  // Prevents the default mini-infobar or install dialog from appearing on mobile
+  e.preventDefault();
+  // Save the event because you'll need to trigger it later.
+  deferredPrompt = e;
+  // Show your customized install prompt for your PWA
+  // Your own UI doesn't have to be a single element, you
+  // can have buttons in different locations, or wait to prompt
+  // as part of a critical journey.
+  showInAppInstallPromotion();
+});
+	</script>
 	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://lsitdevelopment.netlify.app/","url":"https://lsitdevelopment.netlify.app/","name":"LSIT Development","isPartOf":{"@id":"https://lsitdevelopment.netlify.app/#website"},"primaryImageOfPage":{"@id":"https://lsitdevelopment.netlify.app/#primaryimage"},"image":{"@id":"https://lsitdevelopment.netlify.app/#primaryimage"},"thumbnailUrl":"https://lsitdevelopment.netlify.app/wp-content/uploads/2023/01/On-Mission-To-Build-Future-Unicorns-2.png","datePublished":"2022-03-17T14:10:44+00:00","dateModified":"2023-09-25T07:54:48+00:00","description":"The top Web & Mobile App Development agency from USA and India - We're on mission to build future unicorns - Start your mission now.","breadcrumb":{"@id":"https://lsitdevelopment.netlify.app/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://lsitdevelopment.netlify.app/"]}]},{"@type":"ImageObject","inLanguage":"en-US","@id":"https://lsitdevelopment.netlify.app/#primaryimage","url":"https://lsitdevelopment.netlify.app/wp-content/uploads/2023/01/On-Mission-To-Build-Future-Unicorns-2.png","contentUrl":"https://lsitdevelopment.netlify.app/wp-content/uploads/2023/01/On-Mission-To-Build-Future-Unicorns-2.png","width":1563,"height":1563},{"@type":"BreadcrumbList","@id":"https://lsitdevelopment.netlify.app/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home"}]},{"@type":"WebSite","@id":"https://lsitdevelopment.netlify.app/#website","url":"https://lsitdevelopment.netlify.app/","name":"On Mission To Build Future Unicorns!","description":"","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://lsitdevelopment.netlify.app/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"}]}</script>
 	<!-- / Yoast SEO plugin. -->
 
