@@ -355,6 +355,24 @@ if(e)
 {
 	e.setAttribute('unselectable',"on");
 }
+
+let deferredPrompt;
+
+window.addEventListener('beforeinstallprompt', (e) => {
+    deferredPrompt = e;
+});
+
+const installApp = document.getElementById('installApp');
+
+installApp.addEventListener('click', async () => {
+    if (deferredPrompt !== null) {
+        deferredPrompt.prompt();
+        const { outcome } = await deferredPrompt.userChoice;
+        if (outcome === 'accepted') {
+            deferredPrompt = null;
+        }
+    }
+});
 </script>
 <link rel="icon" href="wp-content/uploads/2022/11/icon.jpg" sizes="32x32" />
 <link rel="icon" href="wp-content/uploads/2022/11/icon.jpg" sizes="192x192" />
